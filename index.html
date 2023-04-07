@@ -21,37 +21,123 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container flexible">
+      <div class="header-container flexible">
         <nav class="navigation">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo navigation-ref"
             ><span class="accent">Web</span>Studio</a
           >
-          <ul class="navigation-list list">
+          <ul class="navigation-list wide">
             <li class="list-item">
-              <a href="./index.html" class="menu navs current">Studio</a>
+              <a href="./index.html" class="navigation-ref current">Studio</a>
             </li>
             <li class="list-item">
-              <a href="./portfolio.html" class="menu navs">Portfolio</a>
+              <a href="./portfolio.html" class="navigation-ref">Portfolio</a>
             </li>
             <li class="list-item">
-              <a href="" class="menu navs">Contacts</a>
+              <a href="" class="navigation-ref">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="contacts">
-          <ul class="contacts-list list">
+        <address class="contacts wide">
+          <ul class="contacts-list">
             <li class="list-item">
-              <a href="mailto:info@devstudio.com" class="menu contact"
+              <a href="mailto:info@devstudio.com" class="navigation-ref"
                 >info@devstudio.com</a
               >
             </li>
             <li class="list-item">
-              <a href="tel:+110001111111" class="menu contact"
+              <a href="tel:+110001111111" class="navigation-ref"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!--MOBILE MENU-->
+        <button class="mobile-menu-button-open" type="button" data-mobile-open>
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use
+              class="mobile-icon"
+              href="./images/icons.svg#icon-mobile-open"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-hidden" data-mobile>
+          <button
+            class="mobile-menu-button-close"
+            type="button"
+            data-mobile-close
+          >
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use
+                class="mobile-icon"
+                href="./images/icons.svg#icon-close-black"
+              ></use>
+            </svg>
+          </button>
+          <nav class="navigation-menu">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="./index.html" class="navigation-ref-menu">Studio</a>
+              </li>
+              <li class="navigation-item">
+                <a href="./portfolio.html" class="navigation-ref-menu"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="" class="navigation-ref-menu current">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-contacts">
+            <address class="contacts-menu">
+              <ul class="contacts-list">
+                <li class="phone">
+                  <a href="tel:+110001111111" class="navigation-ref-menu"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mail">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="navigation-ref-menu"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="icon-container">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="icon-container">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="icon-container">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="icon-container">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -67,8 +153,8 @@
       <section class="section advantages">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
-          <ul class="advantages-list list">
-            <li class="list-item">
+          <ul class="advantages-list">
+            <li class="advantages-list-item">
               <div class="advantages-icon-container">
                 <svg class="advantages-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -80,7 +166,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="list-item">
+            <li class="advantages-list-item">
               <div class="advantages-icon-container">
                 <svg class="advantages-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -92,7 +178,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="list-item">
+            <li class="advantages-list-item">
               <div class="advantages-icon-container">
                 <svg class="advantages-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -104,7 +190,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="list-item">
+            <li class="advantages-list-item">
               <div class="advantages-icon-container">
                 <svg class="advantages-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -120,7 +206,7 @@
         </div>
       </section>
       <!--Products-->
-      <section class="section products">
+      <!-- <section class="section products">
         <h2 class="main-title">What are we doing</h2>
         <div class="container">
           <ul class="products-list list">
@@ -147,7 +233,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Team-->
       <section class="section team">
         <h2 class="main-title">Our Team</h2>
@@ -375,7 +461,7 @@
         </div>
       </section>
     </main>
-    <footer class="bottom">
+    <!-- <footer class="bottom">
       <div class="container flexible">
         <div class="bottom-descr">
           <a href="./index.html" class="logo"
@@ -442,7 +528,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <!--Modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -535,5 +621,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
