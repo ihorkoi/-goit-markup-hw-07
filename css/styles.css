@@ -511,8 +511,10 @@ a {
   padding: 96px 0;
 }
 .advantages-list-item {
-  margin-bottom: 72px;
   text-align: center;
+}
+.advantages-list-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 .advantages-icon-container {
   display: none;
@@ -734,17 +736,17 @@ a {
 
 .portfolio {
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   column-gap: 24px;
   row-gap: 48px;
 }
-
+.portfolio-item {
+  width: 396px;
+}
 .portfolio-card {
   display: block;
-  max-width: 396px;
+  width: 100%;
 
   text-decoration: none;
   color: var(--text-main-color);
@@ -807,7 +809,7 @@ a {
     padding-top: 64px;
   }
   .gallery .container {
-    width: 100%;
+    width: 768px;
   }
   .portfolio {
     flex-direction: row;
@@ -817,7 +819,7 @@ a {
     justify-content: center;
     margin-bottom: 64px;
   }
-  .portfolio-card {
+  .portfolio-item {
     width: 356px;
   }
 }
@@ -828,7 +830,7 @@ a {
   .gallery .container {
     width: 1158px;
   }
-  .portfolio-card {
+  .portfolio-item {
     width: 360px;
   }
   .portfolio-btns {
