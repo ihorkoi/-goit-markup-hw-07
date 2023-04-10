@@ -214,7 +214,7 @@ header {
   fill: currentColor;
 }
 .navigation .logo {
-  padding: 24px 22px;
+  padding: 24px 0 22px;
 }
 .navigation-ref {
   display: block;
